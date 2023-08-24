@@ -1,0 +1,142 @@
+<%- include("../partial/header.ejs") %>
+<div class="container-fluid blogpage_Section">
+  <div class="row size-column">
+    <div class="col-xl-12 box-col-12">
+      <form action="/admin/courses/SaveCourses" method="post">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="add-blog-details">
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control titleclass" name="title" id="title">
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <textarea name="description" id="editor1" rows="10" cols="80">Type here and show console to see editor's height</textarea>
+              </div>
+              <div class="form-group">
+                <label>Classes Schedule</label>
+                <input type="text" class="form-control" name="classes_schedule" id="classes_schedule" placeholder=" Weekend Classes">
+              </div>
+              <div class="form-group">
+                <label>Price</label>
+                <input type="number" class="form-control" name="price" id="Price" placeholder="500">
+              </div>
+            </div>
+
+            <div class="add-blog-details course_curriculum_secton">
+              <h5>Course Curriculum <span><i class="fas fa-plus"></i> Add Curriculum</span></h5>
+              <div class="colnesection">
+                <h5>New Item</h5>
+                <div class="form-group">
+                  <label>Certification Title</label>
+                  <input type="text" class="form-control" name="course_curriculum_title" id="course_curriculum_title">
+                </div>
+                <div class="form-group">
+                  <label>Certification Description</label>
+                  <textarea class="form-control" name="course_curriculum_description" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-blog-details faq_section">
+              <h5>FAQ's <span><i class="fas fa-plus"></i> Add FAQ's</span></h5>
+              <div class="colnesection">
+                <h5>New Item</h5>
+                <div class="form-group">
+                  <label>Certification Title</label>
+                  <input type="text" class="form-control" name="faqs_title" id="faqs_title">
+                </div>
+                <div class="form-group">
+                  <label>Certification Description</label>
+                  <textarea class="form-control" name="faqs_description" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-blog-details certification_section">
+              <h5>Certification <span><i class="fas fa-plus"></i> Add Certification</span></h5>
+              <div class="colnesection">
+                <h5>New Item</h5>
+                <div class="form-group">
+                  <label>Certification Title</label>
+                  <input type="text" class="form-control" name="certification_title" id="certification_title">
+                </div>
+                <div class="form-group">
+                  <label>Certification Description</label>
+                  <textarea class="form-control" name="certification_description" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="add-blog-details seosection">
+              <h5>Search engine listing preview <span class="toggle-section">Edit website SEO</span></h5>
+              <div class="showboxconntainsect catagerysection">
+                <!-- Content for SEO section -->
+                <p>Add a title and description to see how this Blog post might appear in a search engine listing</p>
+                <div class="form-group datacountset">
+                  <label>Page title</label>
+                  <input type="text" class="form-control pagetitleclass" name="seotitle" id="seotitle">
+                  <span>0 of 70 characters used</span>
+                </div>
+                <div class="form-group datacountset">
+                  <label>Description</label>
+                  <input type="text" class="form-control" name="seoDescription" id="seoDescription">
+                  <span>0 of 320 characters used</span>
+                </div>
+                <div class="form-group datacountset">
+                  <label>URL and handle</label>
+                  <input type="text" class="form-control urlholderclass" name="seoCategoryURL" id="seoCategoryURL">
+                  <span>0 of 500 characters used</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="finalstatusmode">
+              <h5>Visibility</h5>
+              <div class="form-group">
+                <select class="form-control" name="visibility" id="exampleFormControlSelect1">
+                  <option value="public">Publish</option>
+                  <option value="private">Private</option>
+                  <option value="draft">Draft</option>
+                </select>
+              </div>
+              <h6>Select Catgeory</h6>
+              <div class="form-group">
+                <select class="form-control" name="selectcatgeory" id="exampleFormControlSelect1">
+                  <% Data.forEach((data,i)=> { %> 
+                    <option value="<%= data.Title %>"><%= data.Title %></option> 
+                    <% }); %>
+
+                </select>
+              </div>
+              <h6>Visibility date</h6>
+              <div class="form-group">
+                <input type="datetime-local" name="visibilitydate" class="form-control" id="datePicker">
+              </div>
+              <button type="submit" value="Submit" class="updatebtntopost">Update</button>
+            </div>
+            <div class="finalstatusmode">
+              <h5>Featured image</h5>
+              <div class="featureimgbaner">
+                <div class="form-group">
+                  <input type="file" id="imageInput" name="featuredImage" class="imagesupload" accept="image/*">
+                  <div class="image-preview">
+                    <img id="previewImage" src="#" alt="Preview">
+                  </div>
+                </div>
+                <button id="removeButton" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<%- include("../partial/footer.ejs") %>

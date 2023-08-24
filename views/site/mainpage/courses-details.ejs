@@ -1,0 +1,518 @@
+<%- include("../partial/header.ejs") %>
+    <div class="buy_bar" style="border: 5px;background-color: black; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p style="color: white; font-weight: bold;" class="Font_Size_Master_Heading"><%= Data.Title %>
+                    </p>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="pull-right" style="margin-left:50px;">
+                        <p style="color: white; font-weight: bold;" class="ContactNO"><img src="><%= Data.Featuredimage %>" class="img-responsive FloatLeftImage">
+                            <%= Data.Title %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="counts section-bg">
+        <div style="max-width: 100rem; margin-left:50px; padding-right: 50px" class="card-body">
+            <!--              style="margin-left:450px; margin-right:450px; margin-top:1px"-->
+            <p class="card-title" style="text-align:center"><b>Instructor-led live online classes</b></p>
+            <div class="alert alert-info" size="-100px;" style="border: 100px;" role="alert">
+
+                <p class="card-title" style="color:black;"><%= Data.ClassesSchedule %></p>
+                <!--               style="margin-top:1px; margin-left: 600px;" -->
+                <p style="color:black;font-weight: bold;"> <%= Data.Title %>
+                    <div class="card-text">
+                        <h2><span style="float: left" class="badge badge-success">$<%= Data.Price %></span></h2>
+                    </div>
+                    <div class="card-text">
+                    </div>
+            </div>
+
+            <div>
+                <br>
+                <h2><b> <%= Data.Title %></b></h2>
+                <p class="title-desc"> <%= Data.Description %></p>
+            </div>
+
+            <!--        Start of Training Features-->
+            <div class="container">
+                <p style="text-align:center;"><b>Training Features</b></p>
+                <p class="title-desc"></p>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="count-box">
+                            <i class="icofont-simple-smile" style="color: #20b38e;"></i>
+                            <span>
+                            <h6>Instructor-led Sessions</h6>
+                        </span>
+
+                            <p>Both Weekdays and Weekend batches are available.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="count-box">
+                            <i class="icofont-document-folder" style="color: #c042ff;"></i>
+                            <span>
+                            <h6>Real-Life Case Studies</h6>
+                        </span>
+                            <p>During the sessions you will be working on the case studies provided by the trainer.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <!--              data-aos-delay="400"-->
+                        <!--              data-aos="fade-up"-->
+                        <div class="count-box">
+                            <i class="icofont-live-support" style="color: #46d1ff;"></i>
+                            <span>
+                            <h6>Lifetime Access</h6>
+                        </span>
+                            <p>You will get the life time access of training material including videos & study guides..</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="count-box">
+                            <i class="icofont icofont-chair" style="color: #ffb459;"></i>
+                            <span>
+                            <h6>Assignments</h6>
+                        </span>
+                            <p>Each class will be followed by practical assignments to practice the concepts covered in class
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="count-box">
+                            <i class="icofont-users-alt-5" style="color: #28a745;"></i>
+                            <!--              <span data-toggle="counter-up">1100</span>-->
+                            <span>
+                            <h6>24 x 7 Expert Support</h6>
+                        </span>
+                            <p>We have a lifetime 24x7 online support team to resolve all your technical queries,through a ticket based tracking system..</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="count-box">
+                            <i class="icofont icofont-hand-power" style="color: #007bff;"></i>
+                            <!--              <span data-toggle="counter-up">100</span>-->
+                            <span>
+                            <h6>Certification</h6>
+                        </span>
+                            <p> Towards the end of the course, you will be awarded with Training competition certification based on you performance.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--        END of Training-->
+            <div class="container">
+
+                <h5 style="text-align:center;"><b>Course Curriculum</b></h5>
+                <p class="title-desc"></p>
+
+                <h6>
+                <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Introduction to PMP® Certification</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>In this module, you will learn the basic terms and skills that are applied in a Project
+                            Environment (PMI®, PMP®, A Guide to the Project Management Body of Knowledge (PMBOK® Guide)-
+                            Sixth Edition, Project, Program and Portfolio, PMO, Project Life Cycle, Stakeholders,
+                            Process Groups, Project Business Documents, Tailoring &amp; Project Success Measures).</a>
+                        </li>
+                        <b>Topics Covered</b>
+                        <li><a>Projects &amp; importance of Project Management, Projects &amp; importance of Project
+                            Management, Relationship of Project, Program, Portfolio &amp; Operations Management, Key
+                            components - Project and Development Lifecycles, Project Phase &amp; Phase Gate, Project
+                            Management Processes, Process Groups, Project Management Data &amp; Information, Tailoring,
+                            Project Management Business Documents - Project Business Case, Project Benefits Management
+                            Plan, Project Charter &amp; Project Management Plan, Project Success Measures</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">The Project Environment</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>In this module, you will learn about internal and external factors that influences the
+                            Project such as Project Life Cycle, Project Phases, Organization Structures, Process Assets,
+                            and Enterprise Environmental Factors.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Organizational influences, Organizational influences, Organizational systems, Project
+                            management office</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Role of the Project Manager</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>In this module, you will learn about Project Manager role, Skills and Competencies, Sphere of
+                            Influence, and the Project Manager’s role as a Project Integrator.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Project Manager&#39;s Sphere of Influence, Project Manager&#39;s Sphere of Influence, Project
+                            Manager&#39;s Competencies, Integration by the Project Manager</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Integration Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>In this module, you will learn how to manage a project as an integrated whole. This involves
+                            creating a project charter, performing detailed project planning and obtaining plan
+                            sign-offs, executing, monitoring and controlling the project, reviewing change requests and
+                            closing the project. You will learn several associated techniques. You will also learn about
+                            concepts, details and techniques related to knowledge management.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Overview of Project Integration Management, Overview of Project Integration Management,
+                            Develop Project Charter, Develop Project Management Plan, Direct and Manage Project Work,
+                            Manage Project Knowledge, Monitor and Control Project Work, Perform Integrated Change
+                            Control, Close Project or Phase</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Scope Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>PMBOK® defines Project Scope as the “The work that needs to be accomplished to deliver a
+                            product, service, or result with the specified features and functions.” Learn the key
+                            concepts and techniques to plan for and define project requirements and scope, how to
+                            breakdown project work into smaller components, how to control scope changes and learn about
+                            the process of signing off project outputs after their delivery.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Scope Management, Plan Scope Management, Collect Requirements, Define Scope, Create Work
+                            Breakdown Structure, Validate Scope, Control Scope</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Schedule Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Schedule Management is the process of developing, maintaining and communicating schedules for
+                            Time and Resource in Project Management. This module emphasises the importance of delivering
+                            the Project on time. You will learn how to plan and estimate a project’s schedule, how to
+                            monitor and control it. Several related techniques are covered in-depth.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Topics:, Topics:, Plan Schedule Management, Define Activities, Sequence Activities, Estimate
+                            Activity Durations, Develop Schedule, Control Schedule</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Cost Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Cost Management Plan focuses on Planning and estimating Cost and budget for the Project, and
+                            Controlling Cost. In this module, you will also learn about earned value management or
+                            analysis.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Cost Management, Plan Cost Management, Estimate Costs, Determine Budget, Control
+                            Costs</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Quality Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Quality Management involves Quality Planning, Quality Assurance, and Quality Control. In this
+                            module, you will learn about the key Concepts, basics of well-known quality standards and
+                            several related Tools &amp; Techniques related to Quality Management.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Quality Management, Plan Quality Management, Manage Quality, Control Quality</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Resource Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Resource Management planning deals with identifying and documenting Project Roles,
+                            Responsibilities, and Reporting Relationships as well as creating Staffing Management Plan.
+                            Apart from this, you will also learn to estimate resources, onboard project team members,
+                            develop, manage and control them. This includes tracking Team and Individual performances.
+                            Also learn about methods to motivate, build and lead build high-performance teams.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Resource Management, Plan Resource Management, Estimate Activity Resources, Acquire
+                            Resources, Develop Team, Manage Team, Control Resources</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Communication Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Communicating on Projects require determining the Information and Communication needs of the
+                            Stakeholders. Stakeholders an indispensable part of any Project. Learn about Communications
+                            Planning, managing communications, Performance Reporting and monitoring communications as
+                            part of this module.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Communications Management, Plan Communications Management, Manage Communications,
+                            Monitor Communications</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Risk Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Risk Management is all about anticipating Risks and having a proper plan in place that will
+                            help resolve the Risk when it occurs. Proper Risk Management also helps in reducing
+                            unnecessary stress, prevents many issues from occurring during Project Execution. In this
+                            module, learn about Risk Management Planning, techniques to identify, analyse and monitor
+                            risks, and how to plan risk responses and implement them.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Risk Management, Plan Risk Management, Identify Risks, Perform Qualitative Risk
+                            Analysis, Perform Quantitative Risk Analysis, Plan Risk Responses, Implement Risk Responses,
+                            Monitor Risks</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Procurement Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>A formal process to obtain goods or services from external suppliers is known as Procurement.
+                            Learn about the procurement process, relevant documents and contracts, and details about
+                            planning, managing and controlling sellers.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Plan Procurement Management, Plan Procurement Management, Conduct Procurements, Control
+                            Procurements</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Project Stakeholder Management</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+                        <!--                                <ul data-aos="fade-up" data-aos-delay="400" class="dropdown-menu">-->
+                        <b>Learning Objectives</b>
+                        <li><a>Stakeholders are individuals who get impacted by the Project. Stakeholder Management involves
+                            identification of Stakeholders, analysis of their requirements, developing appropriate
+                            processes and communication channels to work with Stakeholders. In this module, learn about
+                            concepts and techniques related to identifying stakeholders, planning, managing and
+                            monitoring stakeholder engagements.</a></li>
+                        <b>Topics Covered</b>
+                        <li><a>Identify Stakeholders, Identify Stakeholders, Plan Stakeholder Engagement, Manage Stakeholder
+                            Engagement, Monitor Stakeholder Engagement</a></li>
+
+                        <p></p>
+
+                        <!--                                </ul>-->
+
+                    </div>
+                </div>
+
+
+                <h5 style="text-align:center;"><b>FAQ's</b></h5>
+                <p class="title-desc"></p>
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapsef" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">What if I Miss a Class</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapsef">
+                    <div class="card card-body">
+
+                        <a>You will never miss a lecture at CertAchiever! You can choose either of the two options:</a>
+                        <li><a>View the recorded session of the class available in your LMS.</a></li>
+                        <li><a>·You can attend the missed session, in any other live batch."</a></li>
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseG" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Can I attend a Demo Session before enrollment</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseG">
+                    <div class="card card-body">
+                        <a>We have limited number of participants in a live session to maintain the Quality Standards. So,
+                        unfortunately participation in a live class without enrollment is not possible. However, you can
+                        go
+                        through the sample class recording and it would give you a clear insight about how are the
+                        classes
+                        conducted, quality of instructors and the level of interaction in the class.</a>
+                    </div>
+                </div>
+
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseE" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">What if I have some more queries??</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapseE">
+                    <div class="card card-body">
+                        <a>You can give us a CALL at +918882136965 (IN) OR email at admin@certachiever.com</a>
+                    </div>
+                </div>
+
+                <h5 style="text-align:center;"><b>Certification</b></h5>
+                <p class="title-desc"></p>
+                <h6>
+                    <button style="width:100%; text-align:left;" class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapsew" aria-expanded="false" aria-controls="collapseExample">
+                    <li style="font-weight: bold;">Training Certification Process</li>
+                </button>
+                </h6>
+                <div class="collapse" id="collapsew">
+                    <div class="card card-body">
+                        <li><a>Once your training will complete, you will be awarded with training completion certification
+                            from the Trainer.</a></li>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+    </section>
+
+    <%- include("../partial/footer.ejs") %>

@@ -1,0 +1,292 @@
+.dd {
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    display: block;
+    margin-top: 11px;
+    padding: 0px;
+    min-height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #313131;
+    font-weight: 500;
+    font-family: 'Roboto';
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.dd-placeholder,
+.dd-empty {
+    margin: 5px 0px;
+    padding: 0px;
+    min-height: 30px;
+    background: rgb(242, 251, 255);
+    border: 1px dashed rgb(182, 188, 191);
+    box-sizing: border-box;
+}
+
+.button-delete {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin-right: 30px;
+}
+
+.button-edit {
+    position: absolute;
+    top: 0px;
+    right: 0rem;
+}
+
+#saveButton {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+#json-output {
+    margin-top: 20px;
+}
+
+.dd-handle::after {
+    content: "::";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 15px;
+    font-size: 16px;
+    height: 100%;
+    cursor: move;
+    line-height: 40px;
+    padding-left: 7px;
+    color: #878787;
+}
+
+.button-delete:hover {
+    color: rgb(255, 255, 255);
+    background: red;
+    border: unset;
+}
+
+.button-edit:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(32, 129, 98);
+}
+
+.dd-list {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: 30px;
+}
+
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-handle {
+    font-weight: bold;
+    padding: 10px 23px;
+    border: 1px solid rgb(207 205 205);
+    border-radius: 4px;
+}
+
+.dd-item>button {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 42px;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0px;
+    background: rgb(32 129 98);
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 5px;
+    z-index: 2;
+}
+
+.dd-item>button::before {
+    content: "-";
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0px;
+    z-index: 99999;
+    top: 10px;
+    font-size: 19px;
+    background: rgb(32 129 98);
+}
+
+.dd-placeholder,
+.dd-empty {
+    margin: 5px 0px;
+    padding: 0px;
+    min-height: 30px;
+    background: rgb(242, 251, 255);
+    border: 1px dashed rgb(182, 188, 191);
+    box-sizing: border-box;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dd-dragel>.dd-item .dd-handle {
+    margin-top: 0px;
+}
+
+.dd-dragel .dd-handle {
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 6px 0px;
+}
+
+#saveButton {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+#json-output {
+    margin-top: 20px;
+}
+
+.btnn {
+    padding: 0;
+    border-left: 1px solid;
+    border-radius: 0px;
+    height: 100%;
+    cursor: pointer;
+    border-color: #ced4da;
+    width: 30px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.button-delete:hover {
+    color: rgb(255, 255, 255);
+    background: red;
+    border: unset;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #208162 !important;
+    border-color: #2f8264 !important;
+}
+
+.finalstatusmode .from-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 15px;
+    font-size: 12px;
+}
+
+.finalstatusmode .from-group label {
+    margin-bottom: 5px;
+}
+
+.finalstatusmode .from-group input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.finalstatusmode .btn-add-section {
+    display: block;
+}
+
+.color-box.menu-section-area {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.color-box.menu-section-area h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.manucrreadted-section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.swal2-actions {
+    position: relative;
+    z-index: 999;
+    margin: 0 auto;
+    background: #ffff;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.swal2-actions button {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin: 0;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px !important;
+    border-radius: 3px !important;
+}
+
+.swal2-container.swal2-center.swal2-backdrop-show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #000000c7;
+    top: 0;
+    left: 0;
+}
+
+.swal2-actions button.swal2-confirm {
+    margin-right: 0;
+}

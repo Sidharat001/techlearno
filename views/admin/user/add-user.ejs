@@ -1,0 +1,80 @@
+<%- include("../partial/header.ejs") %>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row size-column">
+            <div class="col-xl-12 box-col-12">
+                <div class="card perform-overview-sec">
+                    <div class="formregistration">
+                        <form action="/admin/user/adduser" method="post" id="adduserformregistration">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Name:</label>
+                                        <input type="text" name="AdUsName" id="AdUsName" class="form-control" placeholder="Enter Your Name.">
+                                        <span id="name-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Mobile No:</label>
+                                        <input type="number" class="form-control" name="AdUsMobile" id="AdUsMobile" placeholder="Enter Your Mobile No.">
+                                        <span id="mobile-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Email:</label>
+                                        <input type="email" name="AdUsEmail" id="AdUsEmail" class="form-control" placeholder="Enter Your Email Id.">
+                                        <span id="email-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>User Id:</label>
+                                        <input type="text" class="form-control" name="AdUsUserid" id="AdUsUserid" placeholder="Admin">
+                                        <span id="userid-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Password:</label>
+                                        <input type="password" class="form-control" name="AdUsPassword" id="AdUsPassword" placeholder="Admin@12">
+                                        <span id="password-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Confirm Password:</label>
+                                        <input type="password" class="form-control" id="AdUsComPassword" name="AdUsComPassword" placeholder="Admin@12">
+                                        <span id="confirm-password-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>User Roll:</label>
+                                        <select class="form-control" name="AdUsroll" id="AdUsroll">
+                                                <option value="Admin">Admin</option>
+                                                <option value="Sales" selected>Sales</option>
+                                                <option value="Caller">Caller</option>
+                                                <option value="Team Leader">Team Leader</option> 
+                                                <option value="HR">HR</option>
+                                            </select>
+                                        <span id="AdUsroll-error" class="error-messages"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="btn">
+                                        <button type="submit">Save </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include("../partial/footer.ejs") %>

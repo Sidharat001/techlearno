@@ -1,0 +1,61 @@
+<%- include ("../partial/header.ejs") %>
+
+    <div class="container-fluid">
+        <div class="row size-column">
+            <div class="col-xl-12 box-col-12">
+                <div class="card perform-overview-sec" id="blogpagetables">
+                    <table class="table table-striped table-class normalwarptable" id="table-id">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Edit & Delete</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Visibility</th>
+                                <th>Visibility Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% Data.forEach((data,i)=> { %>
+                                <tr>
+                                    <td>
+                                        <span>No: </span>
+                                        <%= i+1 %>
+                                    </td>
+                                    <td>
+                                        <a href="/admin/category/edit/<%= data.Seo_url %>">Edit</a>
+                                        <a href="/admin/category/delete/<%= data.Seo_url %>">Delete</a>
+                                    </td>
+                                    <td> <span>Title:</span>
+                                        <%= data.Title?.trim().substring(0, 50) %>..
+                                    </td>
+                                    <td> <span>Description:</span>
+                                        <%- data.Description?.trim().substring(0, 1000) %>..
+                                    </td>
+                                    <td> <span>Visibility:</span>
+                                        <%= data.Visibility %>
+                                    </td>
+                                    <td> <span>Visibility Date:</span>
+                                        <%= moment(data.VisibilityDate).format('DD MMMM YYYY') %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+
+                        </tbody>
+                    </table>
+                    <!--Start Pagination -->
+                    <div class='pagination-container'>
+                        <nav>
+                            <ul class="pagination">
+                                <!--	Here the JS Function Will Add the Rows -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include ("../partial/footer.ejs") %>

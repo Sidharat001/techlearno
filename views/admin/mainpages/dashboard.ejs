@@ -1,0 +1,27 @@
+<%- include("../partial/header.ejs") %>
+
+<div class="container-fluid">
+    <div class="row size-column">
+        <div class="col-xl-12 box-col-12">
+            <div class="card perform-overview-sec">
+                <div class="jumbotron">
+                    <h1> <% if ( UserName && UserName.length> 0 ) { %>
+                        Hi<span>, <%= UserName %></span>
+                        <% } %>
+                    </h1>
+                    <p class="lead">This application is for Calling Managemnet</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-12 box-col-12">
+            <div class="card perform-overview-sec">
+                <div class="row size-column">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partial/footer.ejs") %>

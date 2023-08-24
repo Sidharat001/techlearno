@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="icon" type="image/x-icon" href="/admin/images/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/admin/css/bootstrap.css">
+    <!-- Style File -->
+    <link rel="stylesheet" type="text/css" href="/admin/css/style.css">
+    <link rel="stylesheet" href="/admin/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/responsive.css">
+    <!--Google Font -->
+    <link rel="stylesheet" href="/admin/font/google.font.css">
+    <!-- Font-awsome icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Menu -->
+    <link rel="stylesheet" href="https://static.eu1.mindsphere.io/mdsp-css/v1.15.0/css/mdsp-css.min.css" />
+    <link rel="stylesheet" href="/admin/menu/menu.css">
+</head>
+
+<body>
+    <div class="errormessages">
+        <% if(success.length>0) { %>
+            <div class="alert alert-primary sucesss_alert" role="alert">
+                <%= success %>
+            </div>
+            <% } if(error.length>0) { %>
+                <div class="alert alert-danger error_alert" role="alert">
+                    <%= error %>
+                </div>
+                <% } %>
+    </div>
+    <%- include("../partial/top-header.ejs") %>
+        <%- include("../partial/side-navbar.ejs") %>
+            <!-- Page Sidebar Ends-->
+            <div class="page-body ecommerce-dash">
+                <%- include("../partial/breadcrumb.ejs") %>

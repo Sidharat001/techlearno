@@ -1,0 +1,81 @@
+<%- include ("../partial/header.ejs") %>
+
+    <div class="container-fluid">
+        <div class="row size-column">
+            <div class="col-xl-12 box-col-12">
+                <div class="card perform-overview-sec" id="blogpagetables">
+                    <table class="table table-striped table-class normalwarptable" id="table-id">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Edit & Delete</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Classes Schedule</th>
+                                <th>Price</th>
+                                <th>Seo Title</th>
+                                <th>Seo Description</th>
+                                <th>Seo URL</th>
+                                <th>Visibility</th>
+                                <th>Visibility Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% Data.forEach((data,i)=> { %>
+                                <tr>
+                                    <td>
+                                        <span>No: </span>
+                                        <%= i+1 %>
+                                    </td>
+                                    <td>
+                                        <a href="/admin/courses/views-courses/edit/<%= data.Seo_URL %>">Edit</a>
+                                        <a href="/admin/courses/delete/<%= data.Seo_URL %>">Delete</a>
+                                    </td>
+                                    <td> <span>Title:</span>
+                                        <%= data.Title %>..
+                                    </td>
+                                    <td> <span>Description:</span>
+                                        <%- data.Description %>..
+                                    </td>
+                                    <td> <span>Classes Schedule:</span>
+                                        <%- data.ClassesSchedule %>..
+                                    </td>
+                                    <td> <span>Price:</span>
+                                        <%- data.Price %>..
+                                    </td>
+                                    <td> <span>Seo Title:</span>
+                                        <%- data.Seo_Title %>..
+                                    </td>
+                                    <td> <span>Seo Description:</span>
+                                        <%- data.Seo_Description %>..
+                                    </td>
+                                    <td> <span>Seo URl:</span>
+                                        <%- data.Seo_URL %>..
+                                    </td>
+                                    <td> <span>Visibility:</span>
+                                        <%= data.Visibility %>
+                                    </td>
+                                    <td> <span>Visibility Date:</span>
+                                        <%= moment(data.VisibilityDate).format('DD MMMM YYYY') %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+
+                        </tbody>
+                    </table>
+                    <!--Start Pagination -->
+                    <div class='pagination-container'>
+                        <nav>
+                            <ul class="pagination">
+                                <!--	Here the JS Function Will Add the Rows -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include ("../partial/footer.ejs") %>

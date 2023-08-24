@@ -1,0 +1,70 @@
+<%- include("../partial/header.ejs") %>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row size-column">
+            <div class="col-xl-12 box-col-12">
+                <div class="card perform-overview-sec">
+                    <table class="table table-striped table-class" id="table-id">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile No</th>
+                                <th>User Id</th> 
+                                <th>User Roll</th>
+                                <th>Password</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% Data.forEach((data,i)=> { %>
+                                <tr>
+                                    <td>
+                                        <span>No: </span>
+                                        <%= i+1 %>
+                                    </td>
+                                    <td>
+                                        <span>Name: </span>
+                                        <%= data.AURName %>
+                                    </td>
+                                    <td>
+                                        <span>Email: </span>
+                                        <%= data.AUREmail %>
+                                    </td>
+                                    <td>
+                                        <span>Mobile No: </span>
+                                        <%= data.AURMobile %>
+                                    </td>
+                                    <td>
+                                        <span>User Id: </span>
+                                        <%= data.AURUserid %>
+                                    </td>
+                                    <td>
+                                        <span>User Roll: </span>
+                                        <%= data.AURRoll %>
+                                    </td>
+                                    <td>
+                                        <span>Password: </span>
+                                        <%= data.AURPassword %>
+                                    </td>
+
+                                    <td>
+                                        <span>Status : </span>
+                                        <a href="/admin/UserStatusChnages/<%= data.UID %>">
+                                            <div class="form-check form-switch">
+                                                <span value="<%= data.isActive %>"><%= data.isActive %></span>
+                                                <input class="form-check-input" name="user_status" checked type="checkbox" role="switch">
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partial/footer.ejs") %>

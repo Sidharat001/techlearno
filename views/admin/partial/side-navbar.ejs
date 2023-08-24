@@ -1,0 +1,92 @@
+<!-- Page Body Start-->
+<div class="page-body-wrapper sidebar-icon">
+    <!-- Page Sidebar Start-->
+    <header class="main-nav">
+        <div class="logo-wrapper">
+            <a href="/admin/dashboard"><img class="img-fluid" src="" alt=""></a>
+        </div>
+        <nav>
+            <div class="main-navbar">
+                <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                <div id="mainnav">
+                    <ul class="nav-menu custom-scrollbar">
+                        <li class="back-btn">
+                            <div class="mobile-back text-end">
+                                <span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link menu-title" href="/admin/dashboard">
+                                <i data-feather="home"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <% if(is_User) { %>
+                            <% if(Roll=="Admin") { %>
+                                <!-- Admin Dynamic Page  -->
+                                <li class="dropdown">
+                                    <a class="nav-link menu-title" href="javascript:void(0)">
+                                        <i data-feather="users"></i><span>Admin </span></a>
+                                    <ul class="nav-submenu menu-content">
+                                        <li>
+                                            <a href="/admin/user/add-user">
+                                                <span><i data-feather="users"></i></span>Add User
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/admin/user/user-list">
+                                                <span><i data-feather="log-in"></i></span>User List
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <% } %>
+                                    <% if(Roll=="Admin") { %>
+                                        <!-- Category Dynamic Page  -->
+                                        <li class="dropdown">
+                                            <a class="nav-link menu-title" href="javascript:void(0)">
+                                                <i data-feather="file-text"></i>
+                                                <span>Category</span>
+                                            </a>
+                                            <ul class="nav-submenu menu-content">
+                                                <li>
+                                                    <a href="/admin/category/category">
+                                                        <span><i data-feather="file-text"></i></span> category
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/admin/category/add-category">
+                                                        <span> <i data-feather="edit"></i></span>Add category
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <% } %>
+                                            <% if(Roll=="Admin") { %>
+                                                <!-- Category Dynamic Page  -->
+                                                <li class="dropdown">
+                                                    <a class="nav-link menu-title" href="javascript:void(0)">
+                                                        <i data-feather="file-text"></i>
+                                                        <span>courses</span>
+                                                    </a>
+                                                    <ul class="nav-submenu menu-content">
+                                                        <li>
+                                                            <a href="/admin/courses/courses">
+                                                                <span><i data-feather="file-text"></i></span> courses
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/admin/courses/add-courses">
+                                                                <span> <i data-feather="edit"></i></span>Add courses
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <% } %>
+                                                    <% } %>
+                    </ul>
+                </div>
+                <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+            </div>
+        </nav>
+    </header>

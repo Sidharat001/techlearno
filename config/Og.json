@@ -1,0 +1,36 @@
+{
+    "Pages": [
+        {
+            "page": "Home",
+            "title": "Home | Techlearno.com",
+            "url": "/home",
+            "description": "",
+            "image": "/Images/logo.png",
+            "keywords": "",
+            "author": "Techlearno.com",
+            "copyright": "Copyrights © Codesiox technologies. All Rights Reserved"
+        },
+        {
+            "page": "Courses",
+            "title": "Courses | Techlearno.com",
+            "url": "/courses",
+            "description": "",
+            "image": "/Images/logo.png",
+            "keywords": "",
+            "author": "Techlearno.com",
+            "copyright": "Copyrights © Codesiox technologies. All Rights Reserved"
+        },
+        {
+            "page": "Courses Details",
+            "title": "Courses Details | Techlearno.com",
+            "url": "/courses-details",
+            "description": "",
+            "image": "/Images/logo.png",
+            "keywords": "",
+            "author": "Techlearno.com",
+            "copyright": "Copyrights © Codesiox technologies. All Rights Reserved"
+        }
+
+    ]
+
+}

@@ -1,0 +1,64 @@
+<%- include ("../partial/header.ejs") %>
+    <div class="container-fluid blogpage_Section">
+        <div class="row size-column">
+            <div class="col-xl-12 box-col-12">
+                <form action="/admin/category/SaveCategory" method="post">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="add-blog-details">
+                                <div class="form-group">
+                                    <label>Title</label>
+                                    <input type="text" class="form-control titleclass" name="title" id="title">
+                                </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea name="description" id="editor1" rows="10" cols="80">Type here and show console to see editor's height</textarea>
+                                </div>
+                            </div>
+                            <div class="add-blog-details seosection">
+                                <h5>Search engine listing preview <span class="toggle-section">Edit website SEO</span></h5>
+                                <div class="showboxconntainsect catagerysection">
+                                    <!-- Content for SEO section -->
+                                    <p>Add a title and description to see how this Blog post might appear in a search engine listing</p>
+                                    <div class="form-group datacountset">
+                                        <label>Page title</label>
+                                        <input type="text" data-maxlength="70" class="form-control pagetitleclass" name="seotitle" id="seotitle">
+                                        <span>0 of 70 characters used</span>
+                                    </div>
+                                    <div class="form-group datacountset">
+                                        <label>Description</label>
+                                        <input type="text" data-maxlength="320" class="form-control" name="seoDescription" id="seoDescription">
+                                        <span>0 of 320 characters used</span>
+                                    </div>
+                                    <div class="form-group datacountset">
+                                        <label>URL and handle</label>
+                                        <input type="text" data-maxlength="500" class="form-control urlholderclass" name="seoCategoryURL" id="seoCategoryURL">
+                                        <span>0 of 500 characters used</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="finalstatusmode">
+                                <h5>Visibility</h5>
+                                <div class="form-group">
+                                    <select class="form-control" name="visibility" id="exampleFormControlSelect1">
+                                    <option value="public">Publish</option>
+                                    <option value="private">Private</option>
+                                    <option value="draft">Draft</option>
+                                </select>
+                                </div>
+                                <h6>Visibility date</h6>
+                                <div class="form-group">
+                                    <input type="datetime-local" name="visibilitydate" class="form-control" id="datePicker">
+                                </div>
+                                <button type="submit" value="Submit" class="updatebtntopost">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include ("../partial/footer.ejs") %>

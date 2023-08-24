@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Techlearno</title>
+    <!-- Favicons -->
+    <link href="/site/logo.png" rel="icon">
+    <link href="/site/rsz_1rsz_1rsz_1rsz_logo.png" rel="apple-touch-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <!-- Vendor CSS Files -->
+    <link href="/site/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/site/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/site/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/site/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/site/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/site/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/site/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/site/css/style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left">
+                <i class="icofont-envelope"></i><a style="font-weight: bold;" href="mailto:admin@Techlearno.com">admin@Techlearno.com</a>
+                <i style="font-weight: bold;" class="icofont-phone"></i> +919911932591
+            </div>
+
+            <div class="social-links float-right">
+                <i><a style="font-weight: bold;" href="#contact">Contact Us</a></i>
+                <i><button class="btn btn-success" type="button"><a style="font-weight: bold; color: white"
+                            href="pay.html">MakePayment</a></button></i>
+                <i><button class="btn btn-danger" data-toggle="modal" style="font-weight: bold;" data-target="#form">
+                        SignUp </button></i>
+                <i><button class="btn btn-success" data-toggle="modal" style="font-weight: bold;" data-target="#form1">
+                        SignIn</button></i>
+                <a href="https://www.facebook.com/cert.achiever.9" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="https://www.instagram.com/cert.achiever/" class="instagram"><i
+                        class="icofont-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/Techlearno/" class="linkedin"><i
+                        class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container">
+            <div class="logo float-left">
+                <h1 style="font-style: normal;" class="text-light"><a href="/"><span>Techlearno</span></a> </h1>
+            </div>
+            <nav class="nav-menu float-right d-none d-lg-block">
+                <ul>
+                    <li style="font-weight: bold;" class="active"><a href="/">Home</a></li>
+                    <li style="font-weight: bold;"><a href="/#about">About Us</a></li>
+                    <li style="font-weight: bold;"><a href="/#services">Services</a></li>
+                    <li style="font-weight: bold;" class="drop-down"><a href="/courses">Courses</a>
+                        <ul>
+                            <% catdata.forEach(function(data) { %>
+                                <li>
+                                    <a href="/courses/<%= data.Title %>">
+                                        <%= data.Title %>
+                                    </a>
+                                </li>
+                                <% }); %>
+                        </ul>
+                    </li>
+                    <li>
+                        <form style="margin-top:6px;" action="https://www.Techlearno.com/search" method="POST" class="post-form" enctype="multipart/form-data">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="mPn0ucPAKLJx1AzocOqYJC9WA8ykk63ElK0q524DHb2lYrdXt9FlDGQ54zCpOwpU">
+                            <input type="search" name="query" id="query" placeholder="search" />
+                            <button class="btn btn-info" type="submit" value="search">search</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+            <div class="container">
+            </div>
+
+            <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="https://www.Techlearno.com/signup" method="POST" class="post-form" enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="mPn0ucPAKLJx1AzocOqYJC9WA8ykk63ElK0q524DHb2lYrdXt9FlDGQ54zCpOwpU">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password1" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password1" name="password" placeholder="Confirm Password">
+                                </div>
+                                <div>
+                                    <button value="OK" class="btn btn-info" type="submit">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+
+    <div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel1">Sign In Here..!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="https://www.Techlearno.com/signin" method="POST" class="post-form" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="mPn0ucPAKLJx1AzocOqYJC9WA8ykk63ElK0q524DHb2lYrdXt9FlDGQ54zCpOwpU">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="text" name="email" class="form-control" id="email11" aria-describedby="emailHelp" placeholder="Enter email">
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password11" class="form-control" id="password11" placeholder="Password">
+                        </div>
+
+                        <div>
+                            <button value="OK" class="btn btn-info" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
