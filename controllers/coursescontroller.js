@@ -80,7 +80,7 @@ class CoursesDetails {
             const CoursesDetails = await CoursesModel.find();
             const data = CoursesDetails.filter(item => item.Select_Catgeory === Seo_url_details_data);
             if (data.length < 1) {
-                return cb({ Status: "Failed", Msg: "Data Not Found", data: data });
+                return cb({ Status: "suc", Msg: "Data Not Found", data: [] });
             }
             return cb({ Status: "suc", Msg: "User found", data: data });
         } catch (err) {

@@ -20,16 +20,17 @@
         <div class="container">
             <div class="row"> 
                 <!-- Listing 1 -->
-                <% Data.map((item) => {  %>
+                <% if(Data.length > 0 ) {
+                    Data.map((item) => {  %>
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card listing-preview">
                             <img class="card-img-top" src="/media/download_19.png" alt="">
                             <div class="card-img-overlay">
-                                <h2> <span class="badge badge-info"> <%= item.Price %></span> </h2>
+                                <h2> <span class="badge badge-info">$<%= item.Price %></span> </h2>
                             </div>
                             <div class="card-body">
                                 <div class="listing-heading text-center">
-                                    <h6 style="text-align:center;" class="text-primary"><%= item.Title %><</h6>
+                                    <h6 style="text-align:center;" class="text-primary"><%= item.Select_Catgeory %><</h6>
                                     <p><i class="fas fa-map-marker text-secondary"></i>
                                         <h5><%= item.Title %></h5>
                                     </p>
@@ -39,7 +40,9 @@
                         </div>
                         <a class="btn btn-info" href="/courses-details/<%- item.Seo_URL %>" role="button">More Information</a>
                     </div>
-                <% }) %>
+                <% }) }else {%>
+                    <h4>No Data Found</h4>
+                <% } %>
             </div>
         </div>
     </section>

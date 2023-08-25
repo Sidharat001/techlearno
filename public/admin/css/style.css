@@ -3386,7 +3386,15 @@ input#pannumber {
     font-weight: 400;
     color: #616060;
 }
+.add-blog-details  .colnesection {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
 
+.add-blog-details .colnesection h5 {
+    margin: 0px 0px 20px;
+}
 .add-blog-details .form-group label {
     font-size: 12px;
     margin-bottom: 5px;
@@ -3409,7 +3417,7 @@ input#pannumber {
     font-size: 14px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -3438,4 +3446,25 @@ input#pannumber {
 
 .add-blog-details textarea.form-control {
     height: 150px !important;
+}.ck-editor__top.ck-reset_all button {
+    font-size: 14px !important;
+}
+
+.ck-editor__top.ck-reset_all svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.ck-editor__top.ck-reset_all svg.ck-dropdown__arrow {
+    width: 10px !important;
+}
+
+.ck-editor__top.ck-reset_all  button.ck.ck-button {
+    margin-left: 5px;
+    padding: 0;
+}.add-blog-details .ck-blurred.ck.ck-content {
+    height: 150px;
+}.add-blog-details 
+.ck.ck-editor label {
+   display: none;
 }
