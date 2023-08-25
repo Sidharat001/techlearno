@@ -1,4 +1,5 @@
 var express = require('express');
+const cheerio = require('cheerio');
 var router = express.Router();
 var mongooe = require('mongoose');
 
@@ -38,7 +39,7 @@ router.get(["/", "/index", "/Home", "/home"], (req, res) => {
 // Courses 
 router.get(["/courses/:Title"], async (req, res) => {
     const SeoURLData = req.params.Title;
-     await courses_details.CategoryFinddata(SeoURLData, (cb) => {
+    await courses_details.CategoryFinddata(SeoURLData, (cb) => {
         if (cb.Status === 'suc') {
             req.flash("success", cb.Msg);
             return res.status(200).render("../views/site/mainpage/courses.ejs", { title: "Courses  - TaxManager.In", Data: cb.data });

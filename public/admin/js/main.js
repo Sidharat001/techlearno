@@ -4,15 +4,8 @@ $('.course_curriculum_secton h5 span, .faq_section h5 span, .certification_secti
     $(this).closest('.add-blog-details').append(clonedSection);
 });
 
-
-
-
-
-
-
-
-
-
+// main js
+ 
 
 
 // Get references to the input fields by class name

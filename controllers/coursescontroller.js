@@ -34,8 +34,6 @@ class CoursesDetails {
             Courses.VisibilityDate = data.visibilitydate;
             Courses.Featuredimage = data.featuredImage;
 
-
-            console.log(Courses)
             let result = new CoursesModel(Courses);
             await result.save();
             cb({ Status: "suc", Msg: "Courses post saved successfully" });
@@ -93,10 +91,9 @@ class CoursesDetails {
         try {
             const CoursesDetails = await CoursesModel.find();
             const data = CoursesDetails.filter(item => item.Seo_URL === Seo_url_details_data);
-            if (data.length < 1) {
-                return cb({ Status: "Failed", Msg: "Data Not Found", data: data });
+            if (data.length > 0) {
+                return cb({ Status: "suc", Msg: "User found", data: data });
             }
-            return cb({ Status: "suc", Msg: "User found", data: data });
         } catch (err) {
             console.error("Error Views Blog Data data:", err);
             return cb({ Status: "err", Msg: "Error Views Blogs data" });
